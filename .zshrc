@@ -8,26 +8,9 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
 
-PROMPT='${fg[green]}%}[%n@mac]%.$ '
+PROMPT='[%n@mac]%.$ '
 PROMPT2="%{${fg[green]}%}%_> %{${reset_color}%}"
 RPROMPT='%*'
-
-
-## export
-#
-export PATH="$HOME/.nodebrew/current/bin/:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$HOME/.kusanagi/bin:$PATH"
-eval "$(pyenv init -)"
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-export HTTP_PROXY_REQUEST_FULLURI=0
-export HTTPS_PROXY_REQUEST_FULLURI=0
-
-export DEVELOP_BASE_PATH=/Users/noriyukikikuchi/Sites/planb-dev
-eval "$(direnv hook zsh)"
-
 
 # autocomplete
 #
